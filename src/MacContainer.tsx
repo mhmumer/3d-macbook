@@ -1,4 +1,4 @@
-import { ScrollControls, useGLTF, useScroll, useTexture } from "@react-three/drei"
+import { useGLTF, useScroll, useTexture } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
 import * as THREE from "three"
 
@@ -20,7 +20,7 @@ const MacContainer = () => {
    
    let data = useScroll()
    
-   useFrame((state, delta) => {
+   useFrame(() => {
          meshes.screen.rotation.x = THREE.MathUtils.degToRad(180-data.offset*90);
    })
 
