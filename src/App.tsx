@@ -7,10 +7,10 @@ const App = () => {
   return (
     <Canvas camera={{ fov: 10, position: [0, -10, 220] }}>
       <OrbitControls />
-      <Environment files={["./studio_small_09_2k.hdr"]} />
+      <Environment files={["./hospital_room_2_2k.hdr"]} />
       <ScrollControls pages={3}>
         <MacContainer />
-      </ScrollControls> 
+      </ScrollControls>
     </Canvas>
   );
 }
