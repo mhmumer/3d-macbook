@@ -4,7 +4,7 @@ import * as THREE from "three"
 
 const MacContainer = () => {
    let model = useGLTF("./mac.glb")
-   let tex=useTexture("./red.jpg")
+   let tex=useTexture("./mutecx.png")
    let meshes:any = {}
    model.scene.traverse(e => {
     
